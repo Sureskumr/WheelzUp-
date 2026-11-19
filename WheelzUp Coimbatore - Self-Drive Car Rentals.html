@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WheelzUp Coimbatore | Self-Drive Car Rentals (300 KM/Day)</title>
+  <meta name="description" content="WheelzUp Coimbatore - Self-drive car rentals in Coimbatore starting at ₹2,000/day with 300 km/day included. Swift, Baleno, Baleno New, Glanza, Fronx, Brezza, Innova, Ertiga, Tata Hexa, Innova Crysta & Thar ROXX." />
+
+  <!-- Google Fonts: Inter & Rajdhani for crisp automotive typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Rajdhani', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#080A0F',
+              card: '#10141D',
+              surface: '#171D2A',
+              border: '#232C3F',
+              accent: '#FF5500',
+              accentHover: '#E04B00',
+              amber: '#F59E0B',
+              whatsapp: '#25D366',
+              whatsappDark: '#1EBE5D',
+            }
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-white overflow-x-hidden">
+
+  <!-- ==================== STICKY HEADER NAVIGATION ==================== -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-accent to-amber-500 flex items-center justify-center shadow-lg shadow-brand-accent/25 group-hover:scale-105 transition-transform">
+            <!-- SVG Speedometer Icon -->
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 13l4-4m5 3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <div>
+            <span class="font-display text-2xl font-bold tracking-wider uppercase text-white">Wheelz<span class="text-brand-accent">Up</span></span>
+            <span class="block text-[10px] uppercase tracking-[0.22em] text-slate-400 -mt-1">Coimbatore • Tamil Nadu</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#fleet" class="hover:text-brand-accent transition-colors">Fleet & Daily Tariff</a>
+          <a href="#estimator" class="hover:text-brand-accent transition-colors">Tariff & KM Calculator</a>
+          <a href="#requirements" class="hover:text-brand-accent transition-colors">Mandatory Proof</a>
+          <a href="#booking" class="hover:text-brand-accent transition-colors">Reserve Car</a>
+          <a href="#faq" class="hover:text-brand-accent transition-colors">FAQ</a>
+        </nav>
+
+        <!-- Desktop Direct WhatsApp & Book Buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="https://wa.me/919688347799?text=Hello%20WheelzUp%20Coimbatore!%20I%20would%20like%20to%20enquire%20about%20self-drive%20car%20availability."
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-whatsapp/15 text-brand-whatsapp border border-brand-whatsapp/30 hover:bg-brand-whatsapp hover:text-slate-950 font-bold text-sm transition-all">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+            <span>+91 96883 47799</span>
+          </a>
+          <a href="#booking"
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-accent hover:bg-brand-accentHover text-white font-bold text-sm shadow-lg shadow-brand-accent/25 transition-all">
+            <span>Book Now</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl bg-brand-surface border border-white/10 text-slate-200 hover:text-brand-accent">
+          <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-brand-card border-b border-white/10 px-4 pt-3 pb-6 space-y-2">
+      <a href="#fleet" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-brand-surface hover:text-brand-accent font-medium">11 Cars & Daily Prices</a>
+      <a href="#estimator" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-brand-surface hover:text-brand-accent font-medium">Tariff & KM Estimator</a>
+      <a href="#requirements" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-brand-surface hover:text-brand-accent font-medium">Mandatory Proof & 300 KM Rule</a>
+      <a href="#booking" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-brand-surface hover:text-brand-accent font-medium">Full Booking Form</a>
+      <a href="#faq" class="mobile-nav-link block px-4 py-3 rounded-xl text-slate-200 hover:bg-brand-surface hover:text-brand-accent font-medium">FAQ</a>
+      <div class="pt-3 border-t border-white/10">
+        <a href="https://wa.me/919688347799?text=Hello%20WheelzUp%20Coimbatore!%20I%20want%20to%20book%20a%20self-drive%20car."
+           target="_blank" rel="noopener noreferrer"
+           class="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-brand-whatsapp text-slate-950 font-extrabold text-sm">
+          <span>WhatsApp Us: +91 96883 47799</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION & QUICK BOOKING WIDGET ==================== -->
+  <section id="home" class="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
+    <!-- Subtle Dark Automotive Ambient Lighting -->
+    <div class="absolute top-16 left-1/4 w-96 h-96 bg-brand-accent/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <!-- Left Column: Headline, Coimbatore Hubs, Mandatory Proof Badges -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-brand-surface border border-white/10 text-xs font-bold tracking-wider uppercase text-amber-400">
+            <span class="w-2 h-2 rounded-full bg-brand-whatsapp animate-pulse"></span>
+            <span>Coimbatore, Tamil Nadu • 300 KM / Day Included</span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight leading-[1.06] text-white">
+            Self-Drive Car Rentals In <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-amber-400">Coimbatore</span> From ₹2,000/Day.
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Pick up across <strong class="text-white">Coimbatore Airport (CJB), Peelamedu, RS Puram & Gandhipuram</strong> for local drives or scenic hill getaways to <strong class="text-white">Ooty, Valparai, and Munnar</strong>. Every rental includes <strong class="text-amber-400">300 kms per day</strong>.
+          </p>
+
+          <!-- Mandatory Proof & Mileage Highlight Badges -->
+          <div class="space-y-2.5 pt-1">
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Mandatory Pickup Proof & Allowance:</p>
+            <div class="flex flex-wrap gap-2.5">
+              <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-brand-surface border border-amber-500/30 text-xs font-semibold text-amber-300">
+                <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                300 KMs / Day Limit
+              </span>
+              <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-brand-card border border-white/10 text-xs font-semibold text-slate-200">
+                <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2"/></svg>
+                Original Aadhaar Card
+              </span>
+              <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-brand-card border border-white/10 text-xs font-semibold text-slate-200">
+                <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Original Driving Licence
+              </span>
+              <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-brand-card border border-white/10 text-xs font-semibold text-slate-200">
+                <svg class="w-4 h-4 text-brand-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                Two-Wheeler (Security Proof)
+              </span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#fleet"
+               class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-2xl bg-brand-accent hover:bg-brand-accentHover text-white font-bold text-sm sm:text-base shadow-xl shadow-brand-accent/25 transition-all hover:-translate-y-0.5">
+              <span>Browse 11 Self-Drive Cars</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <a href="https://wa.me/919688347799?text=Hello%20WheelzUp%20Coimbatore!%20Please%20share%20today%27s%20available%20self-drive%20cars."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-brand-surface hover:bg-brand-whatsapp hover:text-slate-950 text-white border border-white/15 font-bold text-sm sm:text-base transition-all hover:-translate-y-0.5">
+              <span>WhatsApp +91 96883 47799</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero Quick-Booking Widget -->
+        <div class="lg:col-span-5">
+          <div class="bg-brand-card border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl">
+            <div class="flex items-center justify-between pb-5 mb-5 border-b border-white/10">
+              <div>
+                <h2 class="font-display text-2xl font-bold uppercase text-white">Instant WhatsApp Booking</h2>
+                <p class="text-xs text-slate-400">Coimbatore Desk: +91 96883 47799</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-brand-whatsapp/15 text-brand-whatsapp text-xs font-bold">
+                24/7 Active
+              </span>
+            </div>
+
+            <form id="hero-booking-form" class="space-y-4">
+              <div>
+                <label for="hero-name" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Your Name</label>
+                <input type="text" id="hero-name" required placeholder="e.g. Karthik Raja"
+                       class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-accent" />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="hero-car" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Select Car & Tariff</label>
+                  <select id="hero-car"
+                          class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white text-sm focus:outline-none focus:border-brand-accent">
+                    <option value="Swift — ₹2,000 / day">Swift — ₹2,000 / day</option>
+                    <option value="Baleno — ₹2,000 / day">Baleno — ₹2,000 / day</option>
+                    <option value="Baleno New — ₹2,300 / day">Baleno New — ₹2,300 / day</option>
+                    <option value="Glanza — ₹2,300 / day">Glanza — ₹2,300 / day</option>
+                    <option value="Fronx — ₹2,500 / day">Fronx — ₹2,500 / day</option>
+                    <option value="Brezza — ₹2,600 / day">Brezza — ₹2,600 / day</option>
+                    <option value="Innova — ₹3,300 / day">Innova — ₹3,300 / day</option>
+                    <option value="Ertiga — ₹3,300 / day">Ertiga — ₹3,300 / day</option>
+                    <option value="Tata Hexa — ₹4,000 / day">Tata Hexa — ₹4,000 / day</option>
+                    <option value="Innova Crysta — ₹4,500 / day">Innova Crysta — ₹4,500 / day</option>
+                    <option value="Thar ROXX — ₹6,000 / day">Thar ROXX — ₹6,000 / day</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="hero-date" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Pickup Date</label>
+                  <input type="date" id="hero-date" required
+                         class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white text-sm focus:outline-none focus:border-brand-accent" />
+                </div>
+              </div>
+
+              <div>
+                <label for="hero-hub" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Coimbatore Pickup Hub</label>
+                <select id="hero-hub"
+                        class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white text-sm focus:outline-none focus:border-brand-accent">
+                  <option value="Coimbatore Airport (CJB)">Coimbatore Airport (CJB)</option>
+                  <option value="Peelamedu">Peelamedu</option>
+                  <option value="RS Puram">RS Puram</option>
+                  <option value="Gandhipuram">Gandhipuram</option>
+                  <option value="Saravanampatti">Saravanampatti</option>
+                </select>
+              </div>
+
+              <div class="p-3 rounded-xl bg-brand-surface/90 border border-white/10 text-xs text-slate-300 leading-relaxed">
+                <strong class="text-amber-400">Note:</strong> 300 km/day included. Please bring <strong>Original Aadhaar, Original Driving Licence & Two-Wheeler</strong> at pickup.
+              </div>
+
+              <button type="submit"
+                      class="w-full py-4 rounded-xl bg-brand-whatsapp hover:bg-brand-whatsappDark text-slate-950 font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-brand-whatsapp/25 transition-all cursor-pointer">
+                <span>Send Inquiry on WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SELF-DRIVING FLEET & UPDATED DAILY TARIFF (NO CAR IMAGES) ==================== -->
+  <section id="fleet" class="py-20 bg-brand-card/60 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header & Category Tabs -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+        <div>
+          <span class="text-brand-accent font-bold text-xs uppercase tracking-[0.2em]">Updated Per-Day Tariff</span>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-white mt-2">
+            Self-Driving Cars Lineup
+          </h2>
+          <p class="text-slate-400 text-sm mt-2">
+            All 11 vehicles include <strong class="text-white">300 km/day</strong> limit. Zero car images—pure specs, clear rates, and 1-click WhatsApp booking.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div id="filter-buttons" class="flex flex-wrap gap-2">
+          <button data-filter="all" class="filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-brand-accent text-white transition-all cursor-pointer">
+            All Cars (11)
+          </button>
+          <button data-filter="hatchback" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-brand-surface text-slate-300 hover:text-white border border-white/10 transition-all cursor-pointer">
+            Hatchbacks (4)
+          </button>
+          <button data-filter="compact-suv" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-brand-surface text-slate-300 hover:text-white border border-white/10 transition-all cursor-pointer">
+            Compact SUVs (2)
+          </button>
+          <button data-filter="mpv" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-brand-surface text-slate-300 hover:text-white border border-white/10 transition-all cursor-pointer">
+            7-Seaters & MPVs (4)
+          </button>
+          <button data-filter="lifestyle-4x4" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-brand-surface text-slate-300 hover:text-white border border-white/10 transition-all cursor-pointer">
+            Lifestyle 4x4 (1)
+          </button>
+        </div>
+      </div>
+
+      <!-- Fleet Grid (Pure UI Cards — No Images) -->
+      <div id="fleet-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE TARIFF & KM ESTIMATOR ==================== -->
+  <section id="estimator" class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-brand-card via-brand-surface to-brand-card border border-white/15 rounded-3xl p-6 sm:p-10 shadow-2xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 mb-8 border-b border-white/10">
+          <div>
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-[0.2em]">Instant Trip Calculator</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold uppercase text-white mt-1">
+              Tariff & KM Allowance Estimator
+            </h2>
+          </div>
+          <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-brand-dark/80 border border-white/10 text-xs font-semibold text-slate-300 self-start md:self-auto">
+            Rate Formula: <strong class="text-white">Daily Rent × Days</strong> &amp; <strong class="text-amber-400">300 KM × Days</strong>
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Controls -->
+          <div class="lg:col-span-6 space-y-5">
+            <div>
+              <label for="calc-car" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">1. Choose Vehicle</label>
+              <select id="calc-car"
+                      class="w-full px-4 py-3.5 rounded-xl bg-brand-dark border border-white/15 text-white text-sm font-medium focus:outline-none focus:border-brand-accent">
+                <!-- Populated dynamically from fleetData -->
+              </select>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label for="calc-days" class="text-xs font-bold uppercase tracking-wider text-slate-400">2. Rental Duration (Days)</label>
+                <span id="calc-days-badge" class="px-3 py-1 rounded-lg bg-brand-accent/20 text-brand-accent font-display text-lg font-bold">2 Days</span>
+              </div>
+              <input type="range" id="calc-days" min="1" max="15" value="2"
+                     class="w-full accent-brand-accent cursor-pointer h-2 bg-brand-dark rounded-lg" />
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1.5">
+                <span>1 Day</span>
+                <span>5 Days</span>
+                <span>10 Days</span>
+                <span>15 Days</span>
+              </div>
+            </div>
+
+            <div>
+              <label for="calc-route" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">3. Planned Route (Optional)</label>
+              <select id="calc-route"
+                      class="w-full px-4 py-3 rounded-xl bg-brand-dark border border-white/15 text-white text-sm focus:outline-none focus:border-brand-accent">
+                <option value="Coimbatore Local / Airport Transfer">Coimbatore Local / Airport (CJB)</option>
+                <option value="Coimbatore → Ooty / Coonoor">Coimbatore → Ooty / Coonoor (~180 km round trip)</option>
+                <option value="Coimbatore → Valparai / Pollachi">Coimbatore → Valparai / Pollachi (~220 km round trip)</option>
+                <option value="Coimbatore → Munnar">Coimbatore → Munnar (~320 km round trip)</option>
+                <option value="Custom Outstation Trip">Custom Outstation Trip</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Output Summary Card -->
+          <div class="lg:col-span-6 bg-brand-dark/90 border border-white/10 rounded-2xl p-6 space-y-5">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4">
+              <div>
+                <p class="text-xs text-slate-400 uppercase tracking-wider">Selected Car</p>
+                <h3 id="calc-summary-car" class="font-display text-2xl font-bold text-white uppercase">Baleno New</h3>
+              </div>
+              <div class="text-right">
+                <p class="text-xs text-slate-400 uppercase tracking-wider">Daily Rate</p>
+                <p id="calc-summary-rate" class="font-display text-2xl font-bold text-slate-200">₹2,300</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 rounded-xl bg-brand-surface border border-white/5">
+                <span class="block text-[11px] uppercase tracking-wider text-slate-400">Total Base Rent</span>
+                <span id="calc-total-rent" class="font-display text-3xl font-bold text-brand-whatsapp mt-1 block">₹4,600</span>
+                <span id="calc-days-subtext" class="text-[11px] text-slate-400">for 2 days</span>
+              </div>
+              <div class="p-4 rounded-xl bg-brand-surface border border-white/5">
+                <span class="block text-[11px] uppercase tracking-wider text-slate-400">Included Distance</span>
+                <span id="calc-total-kms" class="font-display text-3xl font-bold text-amber-400 mt-1 block">600 KMs</span>
+                <span class="text-[11px] text-slate-400">300 kms / day</span>
+              </div>
+            </div>
+
+            <button id="calc-whatsapp-btn" type="button"
+                    class="w-full py-4 rounded-xl bg-brand-whatsapp hover:bg-brand-whatsappDark text-slate-950 font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-brand-whatsapp/20 transition-all cursor-pointer">
+              <span>Book This Estimate on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REQUIRED PROOF & RENTAL TERMS ==================== -->
+  <section id="requirements" class="py-20 bg-brand-card/60 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-brand-accent font-bold text-xs uppercase tracking-[0.2em]">Pickup Policy & Mileage Rules</span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-white mt-2">
+          Required Proof & Rental Terms
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-3">
+          To ensure fast, hassle-free key handover in Coimbatore, please carry these three mandatory proofs along with our 300 km/day policy.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Term 1: 300 KM/Day -->
+        <div class="bg-gradient-to-b from-brand-surface to-brand-card border-2 border-amber-500/60 rounded-3xl p-7 shadow-xl">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/15 text-amber-400 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-400">Mileage Allowance</span>
+          <h3 class="font-display text-2xl font-bold text-white uppercase mt-1">300 KMs / Day</h3>
+          <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+            Every 24-hour rental includes <strong>300 kilometres</strong> free limit—ideal for Coimbatore city errands or hill trips to Ooty, Valparai, and Munnar.
+          </p>
+        </div>
+
+        <!-- Proof 1: Original Aadhaar -->
+        <div class="bg-brand-card border border-white/10 rounded-3xl p-7 hover:border-brand-accent/50 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-surface text-brand-accent flex items-center justify-center mb-5 border border-white/10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2"/></svg>
+          </div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Mandatory Proof #1</span>
+          <h3 class="font-display text-2xl font-bold text-white uppercase mt-1">Original Aadhaar</h3>
+          <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+            Customer must produce their <strong>Original Aadhaar Card</strong> for physical identity verification during vehicle handover.
+          </p>
+        </div>
+
+        <!-- Proof 2: Original Driving Licence -->
+        <div class="bg-brand-card border border-white/10 rounded-3xl p-7 hover:border-brand-accent/50 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-surface text-brand-accent flex items-center justify-center mb-5 border border-white/10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Mandatory Proof #2</span>
+          <h3 class="font-display text-2xl font-bold text-white uppercase mt-1">Driving Licence</h3>
+          <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+            A valid <strong>Original LMV Driving Licence</strong> belonging to the driver is strictly required before key handover.
+          </p>
+        </div>
+
+        <!-- Proof 3: Two-Wheeler -->
+        <div class="bg-brand-card border border-white/10 rounded-3xl p-7 hover:border-brand-accent/50 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-brand-surface text-brand-accent flex items-center justify-center mb-5 border border-white/10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Mandatory Proof #3</span>
+          <h3 class="font-display text-2xl font-bold text-white uppercase mt-1">Two-Wheeler</h3>
+          <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+            A <strong>Two-Wheeler</strong> must be handed over/submitted as security proof during the self-drive rental period.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FULL WHATSAPP RESERVATION FORM ==================== -->
+  <section id="booking" class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-brand-card border border-white/15 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl">
+        <div class="grid lg:grid-cols-12 gap-10 items-start">
+          <!-- Left Info & Pickup Checklist -->
+          <div class="lg:col-span-5 space-y-5">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/15 text-brand-accent text-xs font-bold uppercase tracking-wider">
+              Direct WhatsApp Desk
+            </span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold uppercase text-white leading-tight">
+              Reserve Your Self-Drive Car
+            </h2>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Fill in your trip details below. Submitting sends a pre-formatted reservation request directly to <strong class="text-white">+91 96883 47799</strong> on WhatsApp.
+            </p>
+
+            <!-- Pickup Checklist Box -->
+            <div class="p-4 rounded-2xl bg-brand-surface border border-white/10 space-y-2.5 text-xs text-slate-300">
+              <p class="font-bold uppercase tracking-wider text-[11px] text-amber-400">Mandatory Handover Checklist:</p>
+              <p class="flex items-center gap-2"><span class="text-brand-whatsapp font-bold">✓</span> Daily Allowance: <strong>300 km / day</strong></p>
+              <p class="flex items-center gap-2"><span class="text-brand-whatsapp font-bold">✓</span> Original Aadhaar Card</p>
+              <p class="flex items-center gap-2"><span class="text-brand-whatsapp font-bold">✓</span> Original Driving Licence</p>
+              <p class="flex items-center gap-2"><span class="text-brand-whatsapp font-bold">✓</span> Two-Wheeler (Security Proof)</p>
+            </div>
+
+            <!-- Coimbatore Hubs & Contact -->
+            <div class="space-y-3 pt-2 text-xs text-slate-400">
+              <p><strong class="text-white">Pickup Hubs:</strong> Coimbatore Airport (CJB), Peelamedu, RS Puram, Gandhipuram & Saravanampatti</p>
+              <p><strong class="text-white">Popular Routes:</strong> Ooty, Coonoor, Valparai, Pollachi & Munnar</p>
+              <p><strong class="text-white">WhatsApp / Call:</strong> <a href="https://wa.me/919688347799" target="_blank" rel="noopener noreferrer" class="text-brand-whatsapp font-bold hover:underline">+91 96883 47799</a></p>
+            </div>
+          </div>
+
+          <!-- Right Reservation Form -->
+          <div class="lg:col-span-7">
+            <form id="main-booking-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="book-name" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Full Name *</label>
+                  <input type="text" id="book-name" required placeholder="Enter your full name"
+                         class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-accent" />
+                </div>
+                <div>
+                  <label for="book-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Mobile / WhatsApp No. *</label>
+                  <input type="tel" id="book-phone" required placeholder="+91 98XXX XXXXX"
+                         class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-accent" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="book-vehicle" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Choose Self-Drive Car *</label>
+                  <select id="book-vehicle"
+                          class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white text-sm focus:outline-none focus:border-brand-accent">
+                    <option value="Swift — ₹2,000 / day">1. Swift — ₹2,000 / day</option>
+                    <option value="Baleno — ₹2,000 / day">2. Baleno — ₹2,000 / day</option>
+                    <option value="Baleno New — ₹2,300 / day">3. Baleno New — ₹2,300 / day</option>
+                    <option value="Glanza — ₹2,300 / day">4. Glanza — ₹2,300 / day</option>
+                    <option value="Fronx — ₹2,500 / day">5. Fronx — ₹2,500 / day</option>
+                    <option value="Brezza — ₹2,600 / day">6. Brezza — ₹2,600 / day</option>
+                    <option value="Innova — ₹3,300 / day">7. Innova — ₹3,300 / day</option>
+                    <option value="Ertiga — ₹3,300 / day">8. Ertiga — ₹3,300 / day</option>
+                    <option value="Tata Hexa — ₹4,000 / day">9. Tata Hexa — ₹4,000 / day</option>
+                    <option value="Innova Crysta — ₹4,500 / day">10. Innova Crysta — ₹4,500 / day</option>
+                    <option value="Thar ROXX — ₹6,000 / day">11. Thar ROXX — ₹6,000 / day</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="book-date" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Pickup Date *</label>
+                  <input type="date" id="book-date" required
+                         class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white text-sm focus:outline-none focus:border-brand-accent" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="book-pickup" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Coimbatore Pickup Point</label>
+                  <select id="book-pickup"
+                          class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white text-sm focus:outline-none focus:border-brand-accent">
+                    <option value="Coimbatore Airport (CJB)">Coimbatore Airport (CJB)</option>
+                    <option value="Peelamedu">Peelamedu</option>
+                    <option value="RS Puram">RS Puram</option>
+                    <option value="Gandhipuram">Gandhipuram</option>
+                    <option value="Saravanampatti">Saravanampatti</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="book-notes" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1.5">Days & Destination</label>
+                  <input type="text" id="book-notes" placeholder="e.g. 2 Days / Ooty Trip"
+                         class="w-full px-4 py-3 rounded-xl bg-brand-surface border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-accent" />
+                </div>
+              </div>
+
+              <label class="flex items-start gap-2.5 text-xs text-slate-300 pt-1 cursor-pointer">
+                <input type="checkbox" id="book-proof-confirm" required checked
+                       class="mt-0.5 rounded border-white/20 bg-brand-surface text-brand-accent focus:ring-brand-accent" />
+                <span>I confirm I will provide <strong>Original Aadhaar Card, Original Driving Licence, and a Two-Wheeler</strong> as security proof, and agree to the <strong>300 km/day</strong> limit.</span>
+              </label>
+
+              <button type="submit"
+                      class="w-full py-4 rounded-xl bg-brand-whatsapp hover:bg-brand-whatsappDark text-slate-950 font-extrabold text-sm sm:text-base uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl shadow-brand-whatsapp/25 transition-all cursor-pointer mt-2">
+                <span>Book on WhatsApp (+91 96883 47799)</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACCORDION SECTION ==================== -->
+  <section id="faq" class="py-20 bg-brand-card/60 border-t border-white/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-brand-accent font-bold text-xs uppercase tracking-[0.2em]">Need Clarity?</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold uppercase text-white mt-2">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="space-y-4" id="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item bg-brand-card border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base cursor-pointer">
+            <span>1. What mandatory proof is required to rent a self-driving car at WheelzUp Coimbatore?</span>
+            <span class="text-brand-accent font-bold text-lg transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-white/5 pt-3">
+            You must present three mandatory proofs at pickup: <strong>(1) Original Aadhaar Card</strong>, <strong>(2) Original Driving Licence</strong>, and <strong>(3) a Two-Wheeler</strong> handed over as security proof during your rental period.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item bg-brand-card border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base cursor-pointer">
+            <span>2. How many kilometres are included per day in the rental price?</span>
+            <span class="text-brand-accent font-bold text-lg transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-white/5 pt-3">
+            Every car rental includes a generous <strong>300 kms per day</strong> allowance. For multi-day trips (e.g., 3 days = 900 kms total), your daily allowance accumulates across the booking duration.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item bg-brand-card border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base cursor-pointer">
+            <span>3. Where can I pick up the car in Coimbatore, and can I drive outstation?</span>
+            <span class="text-brand-accent font-bold text-lg transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-white/5 pt-3">
+            We offer pickup across <strong>Coimbatore Airport (CJB), Peelamedu, RS Puram, Gandhipuram, and Saravanampatti</strong>. You can drive locally within Coimbatore or take outstation hill trips to <strong>Ooty, Valparai, Munnar, and Kodaikanal</strong>.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item bg-brand-card border border-white/10 rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-white text-sm sm:text-base cursor-pointer">
+            <span>4. How do I confirm my reservation instantly?</span>
+            <span class="text-brand-accent font-bold text-lg transition-transform duration-200">+</span>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-white/5 pt-3">
+            Click <strong>"Book on WhatsApp"</strong> on any car card or submit the booking form to send your selected vehicle, daily tariff, and pickup date straight to <strong>+91 96883 47799</strong>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-brand-dark border-t border-white/10 pt-14 pb-24 sm:pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-brand-accent flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 13l4-4m5 3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <span class="font-display text-2xl font-bold uppercase text-white">Wheelz<span class="text-brand-accent">Up</span></span>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Self-driving car rentals in Coimbatore, Tamil Nadu. Transparent daily rates from ₹2,000/day with 300 km/day included.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-display text-lg font-bold uppercase text-white mb-3">Mandatory Rental Rules</h4>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>• Daily Distance Limit: <strong class="text-white">300 KMs / Day</strong></li>
+            <li>• Proof #1: <strong class="text-white">Original Aadhaar Card</strong></li>
+            <li>• Proof #2: <strong class="text-white">Original Driving Licence</strong></li>
+            <li>• Proof #3: <strong class="text-white">Two-Wheeler (Security Proof)</strong></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display text-lg font-bold uppercase text-white mb-3">Coimbatore Booking Desk</h4>
+          <p class="text-sm text-slate-400 mb-3">Airport (CJB), Peelamedu, RS Puram & Gandhipuram, Coimbatore, Tamil Nadu</p>
+          <a href="https://wa.me/919688347799?text=Hello%20WheelzUp%20Coimbatore!"
+             target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-whatsapp text-slate-950 font-extrabold text-sm">
+            <span>WhatsApp: +91 96883 47799</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <p>© 2026 WheelzUp Coimbatore. All rights reserved.</p>
+        <p>Direct WhatsApp Bookings: <span class="text-slate-300 font-semibold">+91 96883 47799</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP QUICK-CHAT BUTTON ==================== -->
+  <a href="https://wa.me/919688347799?text=Hello%20WheelzUp%20Coimbatore!%20I%20would%20like%20to%20book%20a%20self-drive%20car."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Chat with WheelzUp Coimbatore on WhatsApp"
+     class="fixed bottom-5 right-5 z-50 flex items-center gap-3 bg-brand-whatsapp hover:bg-brand-whatsappDark text-slate-950 font-extrabold px-4 py-3.5 sm:px-5 sm:py-4 rounded-full shadow-2xl shadow-brand-whatsapp/40 transition-all hover:scale-105">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+    <div class="text-left leading-tight">
+      <span class="block text-[10px] uppercase tracking-wider font-bold opacity-80">WhatsApp Booking</span>
+      <span class="block text-xs sm:text-sm font-extrabold">+91 96883 47799</span>
+    </div>
+  </a>
+
+  <!-- ==================== NON-INTRUSIVE TOAST NOTIFICATION ==================== -->
+  <div id="toast-box" class="fixed top-24 right-5 z-50 hidden max-w-sm bg-brand-surface border border-brand-whatsapp/40 text-white px-5 py-4 rounded-2xl shadow-2xl">
+    <p class="font-bold text-sm text-brand-whatsapp">Opening WhatsApp...</p>
+    <p id="toast-msg" class="text-xs text-slate-300 mt-0.5">Connecting to +91 96883 47799 with your booking details.</p>
+  </div>
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    const WHATSAPP_NUMBER = "919688347799";
+
+    // Exact 11 Self-Driving Cars & Updated Daily Tariffs (Zero Car Images)
+    const fleetData = [
+      { id: 1, index: "01", name: "Swift", category: "hatchback", categoryLabel: "Hatchback", seats: "5 Seater", price: 2000, priceLabel: "₹2,000" },
+      { id: 2, index: "02", name: "Baleno", category: "hatchback", categoryLabel: "Premium Hatchback", seats: "5 Seater", price: 2000, priceLabel: "₹2,000" },
+      { id: 3, index: "03", name: "Baleno New", category: "hatchback", categoryLabel: "New Gen Hatchback", seats: "5 Seater", price: 2300, priceLabel: "₹2,300" },
+      { id: 4, index: "04", name: "Glanza", category: "hatchback", categoryLabel: "Premium Hatchback", seats: "5 Seater", price: 2300, priceLabel: "₹2,300" },
+      { id: 5, index: "05", name: "Fronx", category: "compact-suv", categoryLabel: "Crossover SUV", seats: "5 Seater", price: 2500, priceLabel: "₹2,500" },
+      { id: 6, index: "06", name: "Brezza", category: "compact-suv", categoryLabel: "Compact SUV", seats: "5 Seater", price: 2600, priceLabel: "₹2,600" },
+      { id: 7, index: "07", name: "Innova", category: "mpv", categoryLabel: "Reliable MPV", seats: "7 Seater", price: 3300, priceLabel: "₹3,300" },
+      { id: 8, index: "08", name: "Ertiga", category: "mpv", categoryLabel: "Family MPV", seats: "7 Seater", price: 3300, priceLabel: "₹3,300" },
+      { id: 9, index: "09", name: "Tata Hexa", category: "mpv", categoryLabel: "Full-Size Crossover SUV", seats: "7 Seater", price: 4000, priceLabel: "₹4,000" },
+      { id: 10, index: "10", name: "Innova Crysta", category: "mpv", categoryLabel: "Executive MPV", seats: "7 Seater", price: 4500, priceLabel: "₹4,500" },
+      { id: 11, index: "11", name: "Thar ROXX", category: "lifestyle-4x4", categoryLabel: "5-Door Lifestyle 4x4 SUV", seats: "5 Seater", price: 6000, priceLabel: "₹6,000" }
+    ];
+
+    function showToast(msg) {
+      const box = document.getElementById("toast-box");
+      const text = document.getElementById("toast-msg");
+      if (msg) text.textContent = msg;
+      box.classList.remove("hidden");
+      setTimeout(() => box.classList.add("hidden"), 4000);
+    }
+
+    function openWhatsApp(message) {
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      showToast("Redirecting to WhatsApp (+91 96883 47799)...");
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+
+    // Render Fleet Cards (Strictly NO Car Images — Crisp Automotive Dark/Amber/Slate UI)
+    function renderFleet(filter = "all") {
+      const grid = document.getElementById("fleet-grid");
+      const list = filter === "all" ? fleetData : fleetData.filter(car => car.category === filter);
+
+      grid.innerHTML = list.map(car => `
+        <article class="bg-brand-card border border-brand-border hover:border-brand-accent/80 rounded-3xl p-6 flex flex-col justify-between transition-all shadow-lg group">
+          <div>
+            <!-- Top Header: Number Badge + Category Pill + Steering SVG -->
+            <div class="flex items-center justify-between gap-2 mb-5">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded-lg bg-brand-surface border border-white/10 font-display text-xs font-bold text-amber-400">
+                  #${car.index}
+                </span>
+                <span class="px-3 py-1 rounded-full bg-brand-accent/15 text-brand-accent text-[11px] font-bold uppercase tracking-wider">
+                  ${car.categoryLabel}
+                </span>
+              </div>
+              <div class="w-9 h-9 rounded-xl bg-brand-surface border border-white/10 flex items-center justify-center text-slate-400 group-hover:text-brand-accent transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9" />
+                  <circle cx="12" cy="12" r="2" />
+                  <path stroke-linecap="round" d="M12 14v7M5 10l5 2M19 10l-5 2" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Vehicle Title & Daily Tariff -->
+            <div class="flex items-baseline justify-between gap-3 pb-4 border-b border-white/10">
+              <h3 class="font-display text-2xl sm:text-3xl font-bold uppercase text-white tracking-wide">
+                ${car.name}
+              </h3>
+              <div class="text-right shrink-0">
+                <span class="font-display text-2xl sm:text-3xl font-bold text-brand-whatsapp">${car.priceLabel}</span>
+                <span class="block text-[11px] text-slate-400 font-medium">/ day</span>
+              </div>
+            </div>
+
+            <!-- Specs Pills -->
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="px-3 py-1 rounded-lg bg-brand-surface text-slate-200 text-xs font-semibold border border-white/5">
+                ${car.seats}
+              </span>
+              <span class="px-3 py-1 rounded-lg bg-brand-surface text-amber-300 text-xs font-semibold border border-amber-500/20">
+                300 km/day
+              </span>
+              <span class="px-3 py-1 rounded-lg bg-brand-surface text-slate-300 text-xs font-medium border border-white/5">
+                Self-Drive
+              </span>
+            </div>
+
+            <!-- Mandatory Proof Strip -->
+            <p class="text-[11px] text-slate-400 mt-4 leading-relaxed">
+              <strong class="text-slate-300">Mandatory Proof:</strong> Original Aadhaar, Original Driving Licence & Two-Wheeler.
+            </p>
+          </div>
+
+          <!-- 1-Click Book on WhatsApp + Select for Form -->
+          <div class="pt-5 mt-5 border-t border-white/10 flex items-center gap-2.5">
+            <button type="button" onclick="quickBookCar('${car.name}', '${car.priceLabel}')"
+                    class="flex-1 py-3 px-4 rounded-xl bg-brand-whatsapp hover:bg-brand-whatsappDark text-slate-950 font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer">
+              <span>Book on WhatsApp</span>
+            </button>
+            <button type="button" onclick="prefillBookingForm('${car.name} — ${car.priceLabel} / day')"
+                    class="px-3.5 py-3 rounded-xl bg-brand-surface hover:bg-brand-accent text-white text-xs font-bold border border-white/10 transition-all cursor-pointer">
+              Select
+            </button>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    // 1-Click WhatsApp Message for Individual Car Card
+    function quickBookCar(carName, priceLabel) {
+      const today = new Date().toISOString().split("T")[0];
+      const msg =
+        `Hello WheelzUp Coimbatore! 🚗\n` +
+        `I would like to book a self-drive car:\n` +
+        `• *Car:* ${carName}\n` +
+        `• *Daily Tariff:* ${priceLabel} / day\n` +
+        `• *Included Distance:* 300 km / day\n` +
+        `• *Pickup City:* Coimbatore\n` +
+        `• *Preferred Date:* ${today}\n` +
+        `• *Mandatory Proof Ready:* Original Aadhaar, Original Driving Licence & Two-Wheeler\n\n` +
+        `Please confirm availability.`;
+      openWhatsApp(msg);
+    }
+
+    // Pre-fill Full Booking Form & Scroll
+    function prefillBookingForm(optionLabel) {
+      const select = document.getElementById("book-vehicle");
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value === optionLabel) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+      document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
+      document.getElementById("book-name").focus();
+    }
+
+    // Interactive Tariff & KM Estimator Logic
+    function initEstimator() {
+      const carSelect = document.getElementById("calc-car");
+      const daysSlider = document.getElementById("calc-days");
+      const routeSelect = document.getElementById("calc-route");
+      const waBtn = document.getElementById("calc-whatsapp-btn");
+
+      // Populate dropdown with all 11 cars
+      carSelect.innerHTML = fleetData.map((car, idx) =>
+        `<option value="${idx}" ${car.name === "Baleno New" ? "selected" : ""}>${car.index}. ${car.name} — ${car.priceLabel} / day (${car.seats})</option>`
+      ).join("");
+
+      function updateEstimate() {
+        const car = fleetData[parseInt(carSelect.value, 10)];
+        const days = parseInt(daysSlider.value, 10);
+        const totalRent = car.price * days;
+        const totalKms = 300 * days;
+
+        document.getElementById("calc-days-badge").textContent = `${days} ${days === 1 ? "Day" : "Days"}`;
+        document.getElementById("calc-summary-car").textContent = car.name;
+        document.getElementById("calc-summary-rate").textContent = `${car.priceLabel}/day`;
+        document.getElementById("calc-total-rent").textContent = `₹${totalRent.toLocaleString("en-IN")}`;
+        document.getElementById("calc-days-subtext").textContent = `for ${days} ${days === 1 ? "day" : "days"}`;
+        document.getElementById("calc-total-kms").textContent = `${totalKms.toLocaleString("en-IN")} KMs`;
+      }
+
+      carSelect.addEventListener("change", updateEstimate);
+      daysSlider.addEventListener("input", updateEstimate);
+      updateEstimate();
+
+      waBtn.addEventListener("click", () => {
+        const car = fleetData[parseInt(carSelect.value, 10)];
+        const days = parseInt(daysSlider.value, 10);
+        const totalRent = car.price * days;
+        const totalKms = 300 * days;
+        const route = routeSelect.value;
+
+        const msg =
+          `Hello WheelzUp Coimbatore! 📊\n` +
+          `I calculated a self-drive trip estimate:\n` +
+          `• *Car:* ${car.name} (${car.priceLabel}/day)\n` +
+          `• *Duration:* ${days} ${days === 1 ? "Day" : "Days"}\n` +
+          `• *Estimated Base Rent:* ₹${totalRent.toLocaleString("en-IN")}\n` +
+          `• *Included Distance:* ${totalKms.toLocaleString("en-IN")} KMs (300 km/day)\n` +
+          `• *Planned Route:* ${route}\n` +
+          `• *Mandatory Proof Ready:* Original Aadhaar, Original Driving Licence & Two-Wheeler\n\n` +
+          `Please confirm availability for this booking.`;
+
+        openWhatsApp(msg);
+      });
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      // Set default date inputs to today
+      const todayStr = new Date().toISOString().split("T")[0];
+      const heroDate = document.getElementById("hero-date");
+      const bookDate = document.getElementById("book-date");
+      if (heroDate) { heroDate.value = todayStr; heroDate.min = todayStr; }
+      if (bookDate) { bookDate.value = todayStr; bookDate.min = todayStr; }
+
+      // Render 11-car fleet & initialize estimator
+      renderFleet("all");
+      initEstimator();
+
+      // Category Filter Tabs
+      document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".filter-btn").forEach(b => {
+            b.classList.remove("bg-brand-accent", "text-white", "font-bold");
+            b.classList.add("bg-brand-surface", "text-slate-300", "font-semibold", "border", "border-white/10");
+          });
+          btn.classList.remove("bg-brand-surface", "text-slate-300", "font-semibold", "border", "border-white/10");
+          btn.classList.add("bg-brand-accent", "text-white", "font-bold");
+          renderFleet(btn.dataset.filter);
+        });
+      });
+
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const openIcon = document.getElementById("menu-open-icon");
+      const closeIcon = document.getElementById("menu-close-icon");
+
+      menuBtn.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.toggle("hidden");
+        openIcon.classList.toggle("hidden", !isHidden);
+        closeIcon.classList.toggle("hidden", isHidden);
+      });
+
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          openIcon.classList.remove("hidden");
+          closeIcon.classList.add("hidden");
+        });
+      });
+
+      // Hero Quick-Booking Form Submit
+      document.getElementById("hero-booking-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("hero-name").value.trim();
+        const car = document.getElementById("hero-car").value;
+        const date = document.getElementById("hero-date").value;
+        const hub = document.getElementById("hero-hub").value;
+
+        const msg =
+          `Hello WheelzUp Coimbatore! 🚗\n` +
+          `Self-Drive Quick Inquiry:\n` +
+          `• *Name:* ${name}\n` +
+          `• *Car & Tariff:* ${car}\n` +
+          `• *Mileage Limit:* 300 km / day\n` +
+          `• *Pickup Date:* ${date}\n` +
+          `• *Pickup Hub:* ${hub}\n` +
+          `• *Proof Ready:* Original Aadhaar, Original Driving Licence & Two-Wheeler\n\n` +
+          `Please confirm availability.`;
+
+        openWhatsApp(msg);
+      });
+
+      // Full Reservation Form Submit
+      document.getElementById("main-booking-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("book-name").value.trim();
+        const phone = document.getElementById("book-phone").value.trim();
+        const vehicle = document.getElementById("book-vehicle").value;
+        const date = document.getElementById("book-date").value;
+        const pickup = document.getElementById("book-pickup").value;
+        const notes = document.getElementById("book-notes").value.trim() || "Standard Self-Drive";
+
+        const msg =
+          `Hello WheelzUp Coimbatore! 🏁\n` +
+          `New Self-Drive Car Reservation:\n` +
+          `• *Customer Name:* ${name}\n` +
+          `• *Mobile No.:* ${phone}\n` +
+          `• *Selected Car & Tariff:* ${vehicle}\n` +
+          `• *Included Distance:* 300 km / day\n` +
+          `• *Pickup Date:* ${date}\n` +
+          `• *Coimbatore Hub:* ${pickup}\n` +
+          `• *Duration / Trip:* ${notes}\n` +
+          `• *Mandatory Proof Confirmed:* Original Aadhaar, Original Driving Licence & Two-Wheeler\n\n` +
+          `Kindly confirm my booking.`;
+
+        openWhatsApp(msg);
+      });
+
+      // FAQ Accordion
+      document.querySelectorAll(".faq-trigger").forEach(trigger => {
+        trigger.addEventListener("click", () => {
+          const content = trigger.nextElementSibling;
+          const symbol = trigger.querySelector("span:last-child");
+          const isHidden = content.classList.toggle("hidden");
+          symbol.textContent = isHidden ? "+" : "−";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
